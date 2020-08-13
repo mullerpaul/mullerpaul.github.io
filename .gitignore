@@ -1,0 +1,7 @@
+# ignore _site directory as it is built during the jekyll build and github will do this itself
+# also look at the exclude list in _config.yml
+_site
+.jekyll-cache
+.sass-cache
+.jekyll-metadata
+
