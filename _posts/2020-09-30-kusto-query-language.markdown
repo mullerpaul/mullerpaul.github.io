@@ -6,6 +6,7 @@ Kusto is sometimes acronymized to KQL. Unfortunately, that acronym is already ov
 People used to using SQL should be able to adjust to kusto relatively easily. Another concept which will help in learning kusto is the pipelining of unix commands. The way the output of one command becomes the input of the next command is very similar to how you build up a kusto query.
 
 Here is a table comparing some basic kusto syntaxes to what they are called in SQL:
+
 | **kusto** | **SQL**       |
 |---------|-------------|
 | project | Like a list of columns in the SELECT list.  A comma separated list of attributes which are passed to the next query step. |
