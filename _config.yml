@@ -21,8 +21,7 @@
 title: Paul Muller's professional portfolio
 email: paul.muller.macaroni@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I've worked on some interesting projects, here are some of the more interesting ones.
-  Data Engineering, Data Science, Database development, Database performance tuning, and Data Vizualization.
+  All things data! Working at the inersection of Data Engineering, Data Science, Database development, Database performance tuning, and Data Vizualization.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: DatabasePaul

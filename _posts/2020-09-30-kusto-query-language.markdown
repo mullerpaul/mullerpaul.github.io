@@ -15,11 +15,11 @@ Here is a table comparing some basic kusto syntaxes to what they are called in S
 | sort | Like ORDER BY |
 | take (n) | Like LIMIT (n).  take 5 will return 5 rows.  These are non-deterministic unless you also specified sort |  
 | top (n) | Syntactic sugar combining the sort and take commands into one |
-| bin (<column>, <interval>) | Like FLOOR, or TRUNC usage in Oracle for datetimes.  This operator is very useful in summarize clauses when you want to group all data by hour or by day |
-| ago(<interval>) | used for comparing a datetime field to now.  Like SYSDATE - 1 for example. |
+| `bin (<column>, <interval>)` | Like FLOOR, or TRUNC usage in Oracle for datetimes.  This operator is very useful in summarize clauses when you want to group all data by hour or by day |
+| `ago(<interval>)` | used for comparing a datetime field to now.  Like SYSDATE - 1 for example. |
 | count() | COUNT(*) aggregate function |
-| dcount(<column>) | COUNT(DISTINCT <column>) aggregate function |
-| countif(<expression>) | COUNT(CASE WHEN <expression> THEN 'x' END) aggregate function |
+| `dcount(<column>)` | `COUNT(DISTINCT <column>)` aggregate function |
+| `countif(<expression>)` | `COUNT(CASE WHEN <expression> THEN 'x' END)` aggregate function |
 | serialize | Conceptually like the ORDER BY clause inside the analytic clause of an analytic function.  Needed if you want to use functions like prev, next, or row_number. Incidentally, those are the only analytic functions available in the language. To do things like an analytic MAX, you'll have to self-join instead.  |
 
 
