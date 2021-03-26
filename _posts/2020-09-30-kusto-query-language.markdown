@@ -6,14 +6,13 @@ Kusto is sometimes acronymized to KQL. Unfortunately, that acronym is already ov
 People used to using SQL should be able to adjust to kusto relatively easily. Another concept which will help in learning kusto is the pipelining of unix commands. The way the output of one command becomes the input of the next command is very similar to how you build up a kusto query.
 
 Here is a table comparing some basic kusto syntaxes to what they are called in SQL:
-
 | **kusto** | **SQL**       |
 |---------|-------------|
-| project | Like a list of columns in the SELECT list.  A comma separated list of attributes which are passed to the next query step. |
-| extend | Used to create a new column which is passed on to the next step. |
+| project | This is proJECT, the verb; not PROject, the noun.  This query is similar to the list of columns in the SELECT list.  A comma separated list of attributes which are passed to the next query step. |
+| extend | Used to create a new column which is passed on to the next step.  Similar to a function in the select list.  |
 | summarize | Like GROUP BY, except both the grouping key AND the aggregate functions are specified here. |
 | sort | Like ORDER BY |
-| take (n) | Like LIMIT (n).  take 5 will return 5 rows.  These are non-deterministic unless you also specified sort |  
+| take (n) | Like LIMIT (n).  take (5) causes the query to return only 5 rows (or less).  This is non-deterministic unless you also specify sort |  
 | top (n) | Syntactic sugar combining the sort and take commands into one |
 | `bin (<column>, <interval>)` | Like FLOOR, or TRUNC usage in Oracle for datetimes.  This operator is very useful in summarize clauses when you want to group all data by hour or by day |
 | `ago(<interval>)` | used for comparing a datetime field to now.  Like SYSDATE - 1 for example. |
